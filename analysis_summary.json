@@ -1,0 +1,120 @@
+{
+  "price_rows": 326643,
+  "price_cols": 38,
+  "sched_rows": 3292,
+  "sched_cols": 13,
+  "unique_trains": 533,
+  "unique_routes": 74615,
+  "unique_origin_stns": 1480,
+  "unique_dest_stns": 1594,
+  "classes": {
+    "SL": 97501,
+    "3A": 88438,
+    "2A": 84019,
+    "1A": 37151,
+    "CC": 10136,
+    "2S": 9398
+  },
+  "avail_dist": {
+    "Waitlist": 205951,
+    "Available": 102149,
+    "Regret": 6432,
+    "Not Available": 5077,
+    "RAC": 4603,
+    "Cancelled": 2431
+  },
+  "fare_stats": {
+    "min": 45.0,
+    "max": 8375.0,
+    "mean": 1000.3552808417753,
+    "median": 710.0,
+    "std": 872.0031472754653
+  },
+  "distance_stats": {
+    "min": 1.0,
+    "max": 3149.0,
+    "mean": 587.7451529651638,
+    "median": 404.0,
+    "std": 548.8583239934554
+  },
+  "duration_hours_stats": {
+    "min": 0.016666666666666666,
+    "max": 53.75,
+    "mean": 10.749296122474178,
+    "median": 7.716666666666667,
+    "std": 9.669816713819786
+  },
+  "fare_per_km_by_class": {
+    "1A": 8.442266295417316,
+    "2A": 5.152054337790687,
+    "3A": 3.9427184362333603,
+    "CC": 5.299919345214558,
+    "SL": 1.506158854315557,
+    "2S": 1.2895827112569436
+  },
+  "avail_rate_by_class": {
+    "1A": 28.05577238836101,
+    "2A": 27.00698651495495,
+    "3A": 30.60562201768471,
+    "CC": 68.52801894238358,
+    "SL": 28.400734351442548,
+    "2S": 78.00595871462012
+  },
+  "train_types": {
+    "Express": 242465,
+    "Superfast": 28873,
+    "Express/Mail": 18660,
+    "Special": 16674,
+    "Mail": 12872,
+    "Duronto": 3387,
+    "Rajdhani": 1951,
+    "Passenger": 903,
+    "Vande Bharat": 508,
+    "Shatabdi": 329,
+    "Garib Rath": 21
+  },
+  "fare_components_mean": {
+    "Base Fare": 890.0751217690262,
+    "Reservation Charge": 38.15780531038473,
+    "Superfast Charge": 20.058090943323446,
+    "Service Tax": 42.76151027268302,
+    "Dynamic Fare": 4.22477138649841,
+    "Catering Charge": 4.990601359894441,
+    "Other Charge": 0.05320793649335819
+  },
+  "correlation_totalFare": {
+    "distance": 0.6321523764019706,
+    "duration_hours": 0.6004610119775002,
+    "baseFare": 0.9948631603242345,
+    "totalFare": 1.0,
+    "reservationCharge": 0.6852922117230622,
+    "superfastCharge": 0.4241023186363276,
+    "fare_per_km": -0.015361344853644564,
+    "speed_kmh": 0.22564784195096832
+  },
+  "ml_results": {
+    "linear_regression": {
+      "mae": 224.60121079889697,
+      "mse": 111835.63636625862,
+      "rmse": 334.4183553070295,
+      "r2": 0.8525345882299901
+    },
+    "random_forest": {
+      "mae": 41.7476815812915,
+      "mse": 12265.598059533886,
+      "rmse": 110.75016053954002,
+      "r2": 0.9838266984726497
+    }
+  },
+  "feature_importance": {
+    "classCode_CC": 6.273519132418375e-05,
+    "classCode_SL": 9.837545129055859e-05,
+    "classCode_2S": 0.00013252241749596398,
+    "superfastCharge": 0.0010661031758546445,
+    "classCode_2A": 0.002828784714426838,
+    "duration_clean": 0.015443022538261016,
+    "classCode_3A": 0.09011285388505211,
+    "distance": 0.4444497951571514,
+    "reservationCharge": 0.4458058074691433
+  }
+}
